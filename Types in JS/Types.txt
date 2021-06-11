@@ -1,0 +1,8 @@
+// num -1
+// boolean - true/false
+// undefined
+//String - 'do or do not'
+// null
+// object - {}
+
+// difference between null & undefined - > undefined is the absence of definition & null is the absence of value

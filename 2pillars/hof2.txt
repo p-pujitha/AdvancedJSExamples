@@ -1,0 +1,20 @@
+const giveAccessTo = (name) => {
+    return 'Access granted to ' + name;
+}
+
+
+function letUserLogin(user) {
+    let array = [];
+    for (let i = 0; i < 100000; i++) {
+        array.push(i)
+    }
+    return giveAccessTo(user)
+}
+
+
+
+
+
+//users like admin, managers
+console.log(letUserLogin('Eva'))
+console.log(letUserLogin('Ambica'))

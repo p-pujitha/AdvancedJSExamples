@@ -1,0 +1,8 @@
+function someCaluclation(num1, num2) {
+    return num1 * num2;
+}
+
+for (var i = 0; i < 10000; i++) {
+    someCaluclation(5, 4)
+    console.log(i)
+}

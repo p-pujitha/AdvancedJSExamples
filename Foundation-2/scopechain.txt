@@ -1,0 +1,35 @@
+var x = 'x'
+
+// function printName() {
+//     var c = 'c';
+//     return "Ambica";
+// }
+
+// function findName() {
+//     var b = 'b';
+//     return printName();
+// }
+
+// function sayMyName() {
+//     var a = 'a'
+//     console.log("Variable x :" + x)
+//     return findName();
+// }
+
+// console.log(sayMyName());
+
+
+
+function printName() {
+    var c = 'c';
+    return function findName() {
+        var b = 'b';
+        return function sayMyName() {
+            var a = 'a'
+            console.log(c);
+            return "Ambica"
+        }
+    }
+}
+
+console.log(printName()()())

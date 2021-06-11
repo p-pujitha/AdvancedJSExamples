@@ -1,0 +1,21 @@
+const num = 610 // store in memory
+
+const string = 'A string'
+
+var obj = {
+    firstName: 'firstName',
+    lastName: 'lastName'
+}
+
+//call stack
+
+function calculate() {
+    const sum = 4 + 5;
+    return subtractBy2(sum);
+}
+
+function subtractBy2(num) {
+    return num - 2;
+}
+
+console.log(calculate())

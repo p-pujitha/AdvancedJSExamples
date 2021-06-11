@@ -1,0 +1,45 @@
+//pass by value
+
+var a = 5;
+var b = a;
+
+b++;
+console.log(a);
+console.log(b);
+
+// pass by reference 
+
+let obj1 = {
+    name: 'Name1',
+    password: 'pass1'
+}
+
+let obj2 = obj1;
+
+obj2.password = 'pass2';
+
+console.log("Obj1 : Name :" + obj1.name + " , Password :" + obj1.password)
+console.log("Obj2 : Name :" + obj2.name + " , Password :" + obj2.password)
+
+
+var arr1 = [1, 2, 3, 4, 5];
+var arr2 = arr1;
+var arr3 = [].concat(arr1);
+
+arr2.push(1000000);
+arr3.push(400000)
+
+console.log("Array1 :" + arr1);
+console.log("Array2 :" + arr2);
+console.log("Array3 " + arr3)
+
+
+let object1 = { a: 'a', b: 'b', c: 'c' }
+let object2 = Object.assign({}, object1);
+let object3 = {...object1 }
+
+object1.c = 5
+
+console.log(object1.c);
+console.log(object2.c)
+console.log(object3.c)

@@ -1,0 +1,56 @@
+// assign the function to a variable
+
+var func = function() {
+    console.log("Assigning a function to a variable")
+}
+
+// creating functions as methods in objects
+
+const funcobj = {
+    functionMethod: function() {
+        console.log("function as a method in objects")
+    }
+}
+
+// pasing function to a another function
+
+function passFunc() {
+    console.log("Passing function")
+}
+
+function sum(num1, num2) {
+    console.log(num1 + num2);
+}
+
+var n1 = 10;
+var n2 = 20;
+sum(n1, n2);
+
+//HOF
+function printFunction(ab) {
+    ab();
+}
+
+function a() {
+    console.log("a");
+}
+printFunction(passFunc)
+printFunction(a);
+
+
+// return the value as a function from other function
+
+function valueAsFunction() {
+    console.log("value as a function");
+}
+
+function returnFunction() {
+    return valueAsFunction();
+}
+
+returnFunction()()
+
+
+
+
+// Function()  =======> Function(Parameters) === > HOF

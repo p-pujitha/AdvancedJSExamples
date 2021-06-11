@@ -1,0 +1,16 @@
+const multiplyBy = function(num1) {
+    return function(num2) {
+        return num1 * num2;
+    }
+}
+
+
+var multiplyBy2 = multiplyBy(2);
+
+console.log(multiplyBy2(5))
+
+const multiply = (num1) => (num2) => {
+    return num1 * num2;
+}
+
+console.log(multiply(10)(2))

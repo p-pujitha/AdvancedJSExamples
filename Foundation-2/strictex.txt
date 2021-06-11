@@ -1,0 +1,15 @@
+'use strict'
+
+function weird() {
+    var height = 50;
+    return height;
+}
+
+console.log(weird());
+
+var heyhey = function doodle() {
+    return "heyhey";
+}
+console.log(heyhey())
+
+//https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Strict_mode

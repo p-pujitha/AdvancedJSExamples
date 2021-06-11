@@ -1,0 +1,25 @@
+console.log(1 == 1); //true
+console.log(1 == '1') //true
+console.log(1 === '1') //false
+console.log(1 === 1) //true
+
+if (0) {
+    console.log(4)
+}
+
+//1 -> true
+
+//https://developer.mozilla.org/en-US/docs/Web/JavaScript/Equality_comparisons_and_sameness
+
+//https://dorey.github.io/JavaScript-Equality-Table/
+
+// Guess the output
+console.log(false == "")
+console.log(false == [])
+console.log(false == {})
+console.log("" == 0)
+console.log("" == [])
+console.log("" == {})
+console.log(0 == [])
+console.log(0 == {})
+console.log(0 == null)

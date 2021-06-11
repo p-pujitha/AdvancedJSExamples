@@ -1,0 +1,7 @@
+//weakly typed - JS
+var a = "Test"
+console.log(a + 17)
+
+
+
+//static type in JS -> Type Script

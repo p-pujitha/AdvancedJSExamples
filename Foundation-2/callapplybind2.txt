@@ -1,0 +1,32 @@
+const wizard = {
+    name: 'John',
+    health: 30,
+    heal(num1, num2) {
+        return this.health += num1 + num2;
+    }
+}
+
+const archer = {
+    name: 'John2',
+    health: 50
+}
+
+
+console.log("Archer Before :" + archer.name + " , " + archer.health)
+    // wizard.heal.call(archer, 10, 20)
+wizard.heal.apply(archer, [10, 30])
+    // const bindArcher = wizard.heal.bind(archer, 10, 40);
+    // bindArcher()
+console.log("Archer After:" + archer.name + " , " + archer.health)
+
+
+// Example :
+
+// const array = [1,2,3];
+
+
+// function getMaxNumber(arr){
+//   return Math.max.apply(null, arr);  
+// }
+
+// getMaxNumber(array)

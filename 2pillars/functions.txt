@@ -1,0 +1,32 @@
+//declarations of functions
+
+
+function one() {
+    return 1;
+}
+
+one();
+
+one.call()
+
+const funcObj = {
+    two: function () {
+        return 2;
+    },
+
+    three() {
+        return 3;
+    }
+}
+
+
+funcObj.two();
+funcObj.three();
+
+const four = new Function('return 4')
+
+four()
+
+const five = new Function('num', 'return num')
+
+five(5)

@@ -1,0 +1,36 @@
+//gives method access to their objects.
+var obj = {
+    name: 'Fedrick',
+    printName: function() {
+        console.log(obj.name);
+        console.log(this.name);
+        return this.name;
+    },
+    printBookAndAuthorName() {
+        console.log("Book : Maths " + "Author :" + this.printName())
+    }
+}
+
+obj.printBookAndAuthorName();
+
+
+//execute same code for multiple objects
+
+function importantP() {
+    console.log("PersonName :" + this.name);
+    return this.name;
+}
+
+
+var obj1 = {
+    name: "obj1name",
+    importantPerson: importantP
+}
+
+var obj2 = {
+    name: "obj2name",
+    importantPerson: importantP
+}
+
+console.log(obj1.importantPerson())
+console.log(obj2.importantPerson())

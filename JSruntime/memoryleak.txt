@@ -1,0 +1,24 @@
+let arr = [];
+for(var i=5; i>1; i++){
+    arr.push(i-1);
+}
+
+// global variables
+
+var a =1 
+var b =1
+var obj = {
+    firstname : 'test1',
+    lastname : 'test2'
+}
+
+// event listeners -> forget to remove the event listers
+
+var element = document.getElementById('button');
+element.addEventListener('click', onClick);
+
+//set interval
+
+setInterval(()=>{
+console.log("Hi")
+},2000)

@@ -1,0 +1,27 @@
+function callFunction() {
+    console.log("Called Function");
+}
+
+callFunction()
+callFunction.call()
+
+
+var wizard = {
+    name: 'John',
+    health: 30,
+    heal() {
+        return this.health = 100;
+    }
+}
+
+const archer = {
+    name: 'John2',
+    health: 50
+        //we can use call & apply methods to borrow the heal function instead of copying the same code.
+}
+
+console.log(wizard.heal())
+
+console.log("Archer Before :" + archer.name + " , " + archer.health)
+wizard.heal.call(archer)
+console.log("Archer After:" + archer.name + " , " + archer.health)

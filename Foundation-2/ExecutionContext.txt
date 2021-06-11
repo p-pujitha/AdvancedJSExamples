@@ -1,0 +1,21 @@
+// Global Execution context -> this == window
+
+function printName(){
+    return "Ambica";
+}
+
+function findName(){
+   return printName();
+}
+
+function sayMyName(){
+    return findName();
+}
+
+console.log(sayMyName());
+
+
+ // returning name
+
+
+// call stack      //variables
